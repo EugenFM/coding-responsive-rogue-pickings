@@ -1,4 +1,5 @@
 /******** GLOBAL STYLES ********/
+/***   MOBILE STYLES HERE   ***/
 html {
 	font-size: 16px;
 }
@@ -16,7 +17,7 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
-	
+
 }
 
 h1,
@@ -68,7 +69,7 @@ header h1 span {
 }
 
 header nav {
-	
+
 	padding: 20px 0;
 }
 
@@ -122,7 +123,7 @@ header nav ul li a {
 .section-one,
 .section-two,
 .section-three {
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 .section-one {
@@ -171,4 +172,78 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: 0.875rem;
+}
+
+/****** TABLET STYLES HERE ******/
+@media all and (min-width: 768px) {
+	.bottom-section .content-wrapper {
+		border-top: 5px solid #EEE;
+		border-bottom: 5px solid #EEE;
+		justify-content: space-evenly;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		box-sizing: border-box;
+	}
+
+	.section-one {
+		width: 30%;
+
+	}
+
+	.section-two {
+		width: 40%;
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE;
+		padding: 0 30px;
+
+	}
+
+	.section-three {
+		width: 30%;
+	}
+
+}
+
+
+/****** DESKTOP STYLES HERE ******/
+@media all and (min-width: 1200px) {
+	body {
+		font-size: 1em;
+	}
+
+	header .content-wrapper {
+		justify-content: space-between;
+		text-align: center;
+
+	}
+
+	header h1 {
+		margin: 0;
+		padding: 38px 0;
+		border-bottom: none;
+		width: 79%;
+		text-align: left;
+	}
+
+	header h1 span {
+		color: #45610E;
+	}
+
+	header nav {
+		width: 21%;
+		padding: 20px 0;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+		margin: 0;
+		padding: 20px 0 10px 0;
+		
+	}
 }
